@@ -1,0 +1,144 @@
+.image-1 {
+  width: 75px;
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: column; 
+  grid-template-columns: 20fr 2fr 2fr 2fr 2fr 2fr 17fr 1.5fr;
+  align-items:center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.middle {
+  display:grid;
+  grid-auto-flow:column;
+  grid-template-columns: 5fr 35fr ;
+}
+
+body {
+  background: url('back-2.webp') repeat center;
+  background-blend-mode: darken;
+  background-size: auto;
+}
+
+.HOME, .PROJECTS, .PAGES, .SERVICES, .BLOG, .CONTACT, .FREE-QUOTE {
+  COLOR: white;
+  margin: 6px;
+}
+
+.FREE-QUOTE {
+  background-color: rgb(255, 217, 0);
+  height: 7vh;
+  width: 18vh;
+  font-family: Ubuntu;
+  border-radius: 5%;
+  box-shadow: none;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.middle-2_1 {
+  color:  rgb(255, 217, 0);
+  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.middle-2_2 {
+  color: white;
+  font-size: xxx-large;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.middle-2_3{
+  color: rgba(255, 255, 255, 0.504);
+  font-family: "Ubuntu", sans-serif;
+  font-size: x-small;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.middle-2_4_1 {
+  background-color:  rgb(255, 217, 0);
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 5%;
+  color: white;
+  height: 6vh;
+  width: 20vh;
+  margin-right: 10px;
+  opacity: 0.95;
+}
+
+.middle-2_4_2 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  opacity: 0.9;
+}
+
+.front-arrow, .back-arrow {
+  position: relative;
+  top: 50%; 
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.middle_2 {
+  position: relative;
+  top: 20%;
+}
+
+@media screen and (hover: hover){
+  button:hover {
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@media screen and (hover: hover){
+  a:hover {
+    color:rgba(0, 81, 255, 0.888);
+  }
+}
+
+@media screen and (hover: hover){
+  img:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 900px){
+    button,a,p {
+      max-height: 40%;
+      max-width: 40%;
+      text-size-adjust: 50%;
+      margin-bottom: auto;
+    }
+    .image-1{
+      max-height: 60%;
+      max-width: 60%;
+    }
+
+    .middle-2_3 , .FREE-QUOTE , img{
+      opacity:0;
+    }
+
+    .row {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
